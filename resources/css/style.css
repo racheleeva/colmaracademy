@@ -22,11 +22,15 @@ h1 {
 
 h2 {
   font-size: 36px;
-  padding-top: 32px;
+  padding: 32px 0px;
 }
 
 h3 {
   font-size: 24px;
+}
+
+p {
+  padding-top: 8px;
 }
 
 /* General Section Styles */
@@ -96,10 +100,31 @@ img.TwoColumnSection.SecondSection {
   padding-bottom: 32px;
 }
 
-.TwoColumnSection.SecondSection p {
-  padding-top: 24px;
+.TwoColumnSection.SecondSection h2 {
+  padding-bottom: 24px;
 }
 
+/*temp EpiSource*/
 .EpiSource {
   font-style: italic;
+}
+
+  /*Third Section/Start Learning*/
+.CenteredSection h2 {
+  text-align: center;
+}
+
+.Courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.VerticalListing {
+  margin-right: 32px;
+  width: 25%;
+}
+
+.VerticalListing .ListingText {
+  padding: 16px 0px 24px 16px;
 }
