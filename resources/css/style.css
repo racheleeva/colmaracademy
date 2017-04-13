@@ -177,3 +177,15 @@ img.TwoColumnSection.SecondSection {
 .Theses .RightColumn {
   padding: 0px;
 }
+
+/* Footer */
+footer {
+  border-top: 1px dotted gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+footer a {
+  margin-left: 4px;
+}
