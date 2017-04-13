@@ -1,17 +1,7 @@
-/*
-.MainContent {
-  display: block;
-}
-
-
-.TwoColumnSection {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.RightColumn {
-  display: flex;
-  flex-wrap: wrap;
+/*from Elise, not used
+.flex-content {
+display: flex;
+padding: 0 1.5rem;
 }
 */
 
@@ -23,6 +13,7 @@ h1 {
 h2 {
   font-size: 36px;
   padding: 32px 0px;
+  text-align: center;
 }
 
 h3 {
@@ -31,6 +22,11 @@ h3 {
 
 p {
   padding-top: 8px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* General Section Styles */
@@ -45,19 +41,26 @@ p {
 
 .LeftColumn {
   padding: 32px 24px;
-  max-height: 60%;
+  width: 60%;
+  /*From Elise, alt measurements
+  padding: 2rem 1.5rem 2rem 0;*/
+
 }
 
 .RightColumn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 423px;
+  width: 40%;
+  padding: 16px 0px;
+  /*Spec sheet says 423px, but Elise sugg'd 40% instead*/
+  /*alt padding from Elise
+  padding: 2rem 0;*/
 }
 
 img, video {
   max-width: 100%;
-  max-height: 100%;
+  /* from Elise, no change noticed
+  display: block;*/
 }
 
 .HorizontalListing {
@@ -76,11 +79,34 @@ img, video {
   background-color: gray;
 }
 
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 24px;
+  height: 64px;
+}
+
+.HeaderLogo {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderLogo img {
+  padding-right: 5px;
+}
+
+.HeaderNav a {
+  margin-left: 16px;
+}
+
 /* Specific Section Styles */
   /*First Section/Learn Something*/
 
 .TwoColumnSection.FirstSection .RightColumn {
   padding-left: 16px;
+  justify-content: center;
 }
 
 .button {
@@ -89,6 +115,8 @@ img, video {
   text-align: center;
   padding: 8px;
   margin-top: 16px;
+  width: 60%;
+  /*Just picked a button width since changing RightColumn to 40% made it too wide*/
 }
 
   /*Second Section/Keep Practicing*/
@@ -102,6 +130,7 @@ img.TwoColumnSection.SecondSection {
 
 .TwoColumnSection.SecondSection h2 {
   padding-bottom: 24px;
+  text-align: left;
 }
 
 /*temp EpiSource*/
@@ -110,9 +139,9 @@ img.TwoColumnSection.SecondSection {
 }
 
   /*Third Section/Start Learning*/
-.CenteredSection h2 {
+/*.CenteredSection h2 {
   text-align: center;
-}
+}*/
 
 .Courses {
   display: flex;
@@ -122,9 +151,29 @@ img.TwoColumnSection.SecondSection {
 
 .VerticalListing {
   margin-right: 32px;
+  margin-bottom: 32px;
   width: 25%;
+  background-color: white;
 }
 
 .VerticalListing .ListingText {
   padding: 16px 0px 24px 16px;
+}
+
+  /*Fourth Section/Thesis*/
+.Theses {
+  padding-bottom: 32px;
+}
+
+.Theses .LeftColumn {
+  padding: 0px 24px;
+  width: 60%;
+}
+
+.Theses .LeftColumn h3 {
+  padding-top: 24px;
+}
+
+.Theses .RightColumn {
+  padding: 0px;
 }
