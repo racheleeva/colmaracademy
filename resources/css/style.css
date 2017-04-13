@@ -1,0 +1,105 @@
+/*
+.MainContent {
+  display: block;
+}
+
+
+.TwoColumnSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.RightColumn {
+  display: flex;
+  flex-wrap: wrap;
+}
+*/
+
+/*temp font styles*/
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  padding-top: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* General Section Styles */
+.MainContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.TwoColumnSection {
+  display: flex;
+}
+
+.LeftColumn {
+  padding: 32px 24px;
+  max-height: 60%;
+}
+
+.RightColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 423px;
+}
+
+img, video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.HorizontalListing {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ListingImage {
+  width: 35%;
+  padding: 16px;
+}
+
+.Gray {
+  background-color: gray;
+}
+
+/* Specific Section Styles */
+  /*First Section/Learn Something*/
+
+.TwoColumnSection.FirstSection .RightColumn {
+  padding-left: 16px;
+}
+
+.button {
+  color: white;
+  background-color: red;
+  text-align: center;
+  padding: 8px;
+  margin-top: 16px;
+}
+
+  /*Second Section/Keep Practicing*/
+.TwoColumnSection.SecondSection .LeftColumn{
+  border-right: 1px dotted gray;
+}
+
+img.TwoColumnSection.SecondSection {
+  padding-bottom: 32px;
+}
+
+.TwoColumnSection.SecondSection p {
+  padding-top: 24px;
+}
+
+.EpiSource {
+  font-style: italic;
+}
