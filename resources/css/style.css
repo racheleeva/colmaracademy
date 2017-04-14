@@ -263,8 +263,6 @@ footer a {
 
   .HorizontalListing {
     background-color: hsl(0, 0%, 100%);
-    justify-content: center;
-    padding: 0rem;
     flex-wrap: wrap;
   }
 
