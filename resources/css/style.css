@@ -1,10 +1,4 @@
-/*from Elise, not used
-.flex-content {
-display: flex;
-padding: 0 1.5rem;
-}
-*/
-
+/* General Font Styles */
 html {
   font-size: 16px;
 }
@@ -15,7 +9,7 @@ h1 {
   font-size: 2.75rem;
   line-height: 3rem;
   color: hsl(190, 55%, 40%);
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 h2 {
@@ -35,8 +29,6 @@ h3 {
 }
 
 h4 {
-  font-family: 'Josefin Sans', Arial, sans-serif;
-  text-transform: uppercase;
   font-size: 1.25rem;
   color: hsl(0, 0%, 33%);
   padding-top: 0.75rem;
@@ -61,57 +53,52 @@ a {
   letter-spacing: .125rem;
 }
 
-/* General Section Styles */
-.MainContent {
-  display: flex;
-  flex-direction: column;
+strong {
+  font-weight: bold;
 }
 
+/* General Section Positioning Styles */
 .TwoColumnSection {
   display: flex;
 }
 
 .LeftColumn {
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
   width: 60%;
-  /*From Elise, alt measurements
-  padding: 2rem 1.5rem 2rem 0;*/
-
 }
 
 .RightColumn {
   display: flex;
   flex-direction: column;
   width: 40%;
-  padding: 16px 0px;
-  /*Spec sheet says 423px, but Elise sugg'd 40% instead*/
-  /*alt padding from Elise
-  padding: 2rem 0;*/
+  padding: 1rem 0rem;
+  /* Spec sheet says 423px, but Elise sugg'd 40% instead */
 }
 
 img, video {
   max-width: 100%;
-  /* from Elise, no change noticed
-  display: block;*/
 }
 
 .HorizontalListing {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .ListingImage {
   width: 35%;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .LightBlue {
   background-color: hsl(210, 50%, 85%);
 }
 
-/* Header */
+.Mobile {
+  display: none;
+}
+
+/* Desktop Header */
 header {
   display: flex;
   align-items: center;
@@ -128,71 +115,52 @@ header {
 }
 
 .HeaderLogo img {
-  padding-right: 5px;
+  padding-right: .25rem;
 }
 
-.HeaderLogo strong {
-  font-weight: 700;
-}
-
-
-.HeaderNav a {
-  margin-left: 16px;
-}
-
-.MobileHeader {
-  display: none;
+.Desktop a {
+  margin-left: 1rem;
 }
 
 /* Specific Section Styles */
-/*First Section/Learn Something*/
+/* First Section: Learn Something */
 
-.TwoColumnSection.FirstSection .RightColumn {
-  padding-left: 16px;
+.FirstSection .RightColumn {
+  padding: 1rem;
   justify-content: center;
 }
 
 .button {
-  color: white;
+  color: hsl(0, 0%, 100%);
   background-color: hsl(190, 55%, 40%);
   text-align: center;
-  padding: 8px;
-  margin-top: 16px;
-  margin-bottom: 8px;
+  padding: .5rem;
+  margin-top: 1rem;
   width: 60%;
-  /*Just picked a button width since changing RightColumn to 40% made it too wide*/
+  /* Not spec'd; just picked a button width */
 }
 
-/*Second Section/Keep Practicing*/
-.TwoColumnSection.SecondSection .LeftColumn{
+/* Second Section: Keep Practicing */
+.SecondSection .LeftColumn{
   border-right: 1px solid hsl(0, 0%, 85%);
 }
 
-img.TwoColumnSection.SecondSection {
-  padding-bottom: 32px;
-}
-
-img.Mobile {
-  display: none;
-}
-
-.TwoColumnSection.SecondSection h2 {
-  padding-bottom: 24px;
+.SecondSection h2 {
+  padding-bottom: 1.5rem;
   text-align: left;
 }
 
-/*temp EpiSource*/
-.EpiSource {
+.QuoteSource {
   font-style: italic;
-  text-align: right;
-  padding: 0rem 2rem 0rem 0rem;
+  padding: 0rem;
+}
+
+.HorizontalListing .ListingText {
+  width: 55%;
+  /* Added to force text to wrap and keep to the right of the image */
 }
 
 /*Third Section/Start Learning*/
-/*.CenteredSection h2 {
-  text-align: center;
-}*/
-
 .Courses {
   display: flex;
   flex-wrap: wrap;
@@ -200,32 +168,31 @@ img.Mobile {
 }
 
 .VerticalListing {
-  margin-right: 32px;
-  margin-bottom: 32px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
   width: 25%;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .VerticalListing .ListingText {
-  padding: 16px 0px 24px 16px;
+  padding: 1rem 0rem 1.5rem 1rem;
 }
 
-/*Fourth Section/Thesis*/
+/* Fourth Section: Theses */
 .Theses {
-  padding-bottom: 32px;
+  padding-bottom: 2rem;
 }
 
 .Theses .LeftColumn {
-  padding: 0px 24px;
-  width: 60%;
+  padding: 0rem 1rem 0rem 1.5rem;
 }
 
 .Theses .LeftColumn h3 {
-  padding-top: 24px;
+  padding-top: 1.5rem;
 }
 
 .Theses .RightColumn {
-  padding: 0px;
+  padding: 0rem;
 }
 
 /* Footer */
@@ -233,7 +200,7 @@ footer {
   border-top: 1px solid hsl(0, 0%, 85%);
   display: flex;
   justify-content: space-between;
-  padding: 24px;
+  padding: 1.5rem;
   font-family: 'Josefin Sans', Arial, sans-serif;
   font-size: .75rem;
   text-transform: uppercase;
@@ -242,16 +209,20 @@ footer {
 }
 
 footer a {
-  margin-left: 4px;
+  margin-left: .25rem;
 }
 
 /*Mobile*/
 @media only screen and (max-width: 470px) {
-  .HeaderLogo, .HeaderNav, .FirstSection img, .SecondSection .LeftColumn, img.Desktop, .VerticalListing img, .Courses .ListingText p, .Theses .RightColumn, .Theses h3, .Theses p {
+  .HeaderLogo, .FirstSection img, .SecondSection .LeftColumn, .Desktop, .VerticalListing img, h4, .VerticalListing p, .Theses .RightColumn, .Theses h3, .Theses p {
     display: none;
   }
 
-  .MobileHeader {
+  .Mobile {
+    display: block;
+  }
+
+  header .Mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -261,19 +232,17 @@ footer a {
   .TwoColumnSection {
     flex-direction: column;
     flex-wrap: wrap-reverse;
-    /*Not sure why wrap-reverse works here*/
+    /* Not totally sure why wrap-reverse helps center things here */
   }
 
   .LeftColumn, .RightColumn {
     width: 100%;
+    /* to override the 60% width at Desktop */
   }
 
   .RightColumn {
     align-items: center;
-  }
-
-  .FirstSection .RightColumn h1, h3 {
-    margin: 16px;
+    /* to center the Start Here button */
   }
 
   .FirstSection .LeftColumn {
@@ -284,66 +253,62 @@ footer a {
     height: 180px;
   }
 
+  .FirstSection .RightColumn h1, .FirstSection .RightColumn h3 {
+    padding: 1rem 2rem;
+  }
+
+  .button {
+    margin-bottom: 1rem;
+  }
+
   .HorizontalListing {
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     justify-content: center;
+    padding: 0rem;
   }
 
   .ListingImage {
     width: 100%;
-    padding: 16px;
+    padding: 0rem 1rem;
   }
 
-  img.Mobile {
-    display: block;
+  .HorizontalListing .ListingText {
+    width: 100%;
+    padding: 1rem 2rem;
   }
 
   .CenteredSection {
-    flex-direction: column;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem 0rem;
     border-top: 1px solid hsl(0, 0%, 85%);
     border-bottom: 1px solid hsl(0, 0%, 85%);
   }
 
-  .Courses {
-    flex-direction: column;
-    align-items: center;
+  .CenteredSection h2 {
+    padding: 0rem 0rem 1rem 0rem;
   }
 
-  .Courses .VerticalListing {
-    background-color: gray;
-    margin: 0px 0px 8px 0px;
+  .VerticalListing {
+    background-color: hsl(210, 50%, 85%);
+    margin: 0rem 0rem .5rem 0rem;
     width: 85%;
-    /*There should be a better way to set this, I think*/
   }
 
-  .VerticalListing .ListingText {
-    padding: 0px;
+ .VerticalListing .ListingText {
+    padding: 1rem;
   }
 
   .Theses .LeftColumn {
-    width: 100%;
-    padding: 0px;
+    padding: 0rem;
   }
 
   Footer {
-    padding: 16px;
+    padding: 1rem;
+    border: none;
   }
 
   Footer a {
     display: none;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-  }
+}
