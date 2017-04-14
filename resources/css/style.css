@@ -5,35 +5,60 @@ padding: 0 1.5rem;
 }
 */
 
-/*temp font styles*/
 html {
-  font-family: 'Neuton', Georgia, serif;
   font-size: 16px;
 }
 
 h1 {
   font-family: 'Josefin Sans', Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  color: hsl(190, 55%, 40%);
+  padding-bottom: 1rem;
 }
 
 h2 {
-  font-size: 36px;
-  padding: 32px 0px;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  color: hsl(190, 55%, 40%);
+  padding: 2rem 0rem;
   text-align: center;
 }
 
 h3 {
-  font-size: 24px;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  color: hsl(190, 55%, 40%);
+}
+
+h4 {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 33%);
+  padding-top: 0.75rem;
 }
 
 p {
-  padding-top: 8px;
+  font-family: 'Neuton', Georgia, serif;
+  text-transform: none;
+  letter-spacing: normal;
+  color: hsl(0, 0%, 33%);
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
 }
 
 a {
-  color: inherit;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  color: hsl(190, 55%, 40%);
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
 }
 
 /* General Section Styles */
@@ -82,8 +107,8 @@ img, video {
   padding: 16px;
 }
 
-.Gray {
-  background-color: gray;
+.LightBlue {
+  background-color: hsl(210, 50%, 85%);
 }
 
 /* Header */
@@ -96,6 +121,8 @@ header {
 }
 
 .HeaderLogo {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  letter-spacing: .25rem;
   display: flex;
   align-items: center;
 }
@@ -103,6 +130,11 @@ header {
 .HeaderLogo img {
   padding-right: 5px;
 }
+
+.HeaderLogo strong {
+  font-weight: 700;
+}
+
 
 .HeaderNav a {
   margin-left: 16px;
@@ -113,7 +145,7 @@ header {
 }
 
 /* Specific Section Styles */
-  /*First Section/Learn Something*/
+/*First Section/Learn Something*/
 
 .TwoColumnSection.FirstSection .RightColumn {
   padding-left: 16px;
@@ -122,7 +154,7 @@ header {
 
 .button {
   color: white;
-  background-color: red;
+  background-color: hsl(190, 55%, 40%);
   text-align: center;
   padding: 8px;
   margin-top: 16px;
@@ -131,9 +163,9 @@ header {
   /*Just picked a button width since changing RightColumn to 40% made it too wide*/
 }
 
-  /*Second Section/Keep Practicing*/
+/*Second Section/Keep Practicing*/
 .TwoColumnSection.SecondSection .LeftColumn{
-  border-right: 1px dotted gray;
+  border-right: 1px solid hsl(0, 0%, 85%);
 }
 
 img.TwoColumnSection.SecondSection {
@@ -152,9 +184,11 @@ img.Mobile {
 /*temp EpiSource*/
 .EpiSource {
   font-style: italic;
+  text-align: right;
+  padding: 0rem 2rem 0rem 0rem;
 }
 
-  /*Third Section/Start Learning*/
+/*Third Section/Start Learning*/
 /*.CenteredSection h2 {
   text-align: center;
 }*/
@@ -176,7 +210,7 @@ img.Mobile {
   padding: 16px 0px 24px 16px;
 }
 
-  /*Fourth Section/Thesis*/
+/*Fourth Section/Thesis*/
 .Theses {
   padding-bottom: 32px;
 }
@@ -196,10 +230,15 @@ img.Mobile {
 
 /* Footer */
 footer {
-  border-top: 1px dotted gray;
+  border-top: 1px solid hsl(0, 0%, 85%);
   display: flex;
   justify-content: space-between;
   padding: 24px;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+  color: hsl(0, 0%, 33%);
 }
 
 footer a {
@@ -262,8 +301,8 @@ footer a {
   .CenteredSection {
     flex-direction: column;
     background-color: white;
-    border-top: 1px dotted gray;
-    border-bottom: 1px dotted gray;
+    border-top: 1px solid hsl(0, 0%, 85%);
+    border-bottom: 1px solid hsl(0, 0%, 85%);
   }
 
   .Courses {
