@@ -101,6 +101,10 @@ header {
   margin-left: 16px;
 }
 
+.MobileHeader {
+  display: none;
+}
+
 /* Specific Section Styles */
   /*First Section/Learn Something*/
 
@@ -126,6 +130,10 @@ header {
 
 img.TwoColumnSection.SecondSection {
   padding-bottom: 32px;
+}
+
+img.Mobile {
+  display: none;
 }
 
 .TwoColumnSection.SecondSection h2 {
@@ -189,3 +197,92 @@ footer {
 footer a {
   margin-left: 4px;
 }
+
+/*Mobile*/
+@media only screen and (max-width: 470px) {
+  .HeaderLogo, .HeaderNav, .FirstSection img, .SecondSection .LeftColumn, img.Desktop, .VerticalListing img, .Courses .ListingText p, .Theses .RightColumn, .Theses h3, .Theses p {
+    display: none;
+  }
+
+  .MobileHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .TwoColumnSection {
+    flex-direction: column;
+  }
+
+  .LeftColumn, .RightColumn {
+    width: 100%;
+  }
+
+  .FirstSection .LeftColumn {
+    background-image: url("../images/banner.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 180px;
+  }
+
+  .HorizontalListing {
+    background-color: white;
+  }
+
+  .ListingImage {
+    width: 100%;
+    padding: 16px;
+  }
+
+  img.Mobile {
+    display: block;
+  }
+
+  .CenteredSection {
+    flex-direction: column;
+    background-color: white;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+  }
+
+  .Courses {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Courses .VerticalListing {
+    background-color: gray;
+    padding: 16px;
+    margin: 0px 0px 8px 0px;
+    width: 85%;
+    /*There should be a better way to set this, I think*/
+  }
+
+  .Theses .LeftColumn {
+    width: 100%;
+    padding: 0px;
+  }
+
+  Footer {
+    padding: 16px;
+  }
+
+  Footer a {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
