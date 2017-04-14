@@ -6,7 +6,14 @@ padding: 0 1.5rem;
 */
 
 /*temp font styles*/
+html {
+  font-family: 'Neuton', Georgia, serif;
+  font-size: 16px;
+}
+
 h1 {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  text-transform: uppercase;
   font-size: 48px;
 }
 
@@ -119,6 +126,7 @@ header {
   text-align: center;
   padding: 8px;
   margin-top: 16px;
+  margin-bottom: 8px;
   width: 60%;
   /*Just picked a button width since changing RightColumn to 40% made it too wide*/
 }
@@ -213,10 +221,20 @@ footer a {
 
   .TwoColumnSection {
     flex-direction: column;
+    flex-wrap: wrap-reverse;
+    /*Not sure why wrap-reverse works here*/
   }
 
   .LeftColumn, .RightColumn {
     width: 100%;
+  }
+
+  .RightColumn {
+    align-items: center;
+  }
+
+  .FirstSection .RightColumn h1, h3 {
+    margin: 16px;
   }
 
   .FirstSection .LeftColumn {
@@ -229,6 +247,7 @@ footer a {
 
   .HorizontalListing {
     background-color: white;
+    justify-content: center;
   }
 
   .ListingImage {
@@ -254,10 +273,13 @@ footer a {
 
   .Courses .VerticalListing {
     background-color: gray;
-    padding: 16px;
     margin: 0px 0px 8px 0px;
     width: 85%;
     /*There should be a better way to set this, I think*/
+  }
+
+  .VerticalListing .ListingText {
+    padding: 0px;
   }
 
   .Theses .LeftColumn {
