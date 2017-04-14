@@ -83,7 +83,6 @@ img, video {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  height: 180px;
 }
 
 .ListingImage {
