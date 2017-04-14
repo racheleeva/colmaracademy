@@ -98,6 +98,10 @@ img, video {
   display: none;
 }
 
+.Desktop a {
+  margin-left: 1rem;
+}
+
 /* Desktop Header */
 header {
   display: flex;
@@ -116,10 +120,6 @@ header {
 
 .HeaderLogo img {
   padding-right: .25rem;
-}
-
-.Desktop a {
-  margin-left: 1rem;
 }
 
 /* Specific Section Styles */
