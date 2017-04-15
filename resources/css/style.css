@@ -228,6 +228,24 @@ footer a {
     align-items: center;
     width: 100%;
   }
+
+  .TwoColumnSection, .Courses {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LeftColumn, .RightColumn {
+    width: 80%;
+  }
+
+  .SecondSection .LeftColumn {
+    border-right: none;
+  }
+
+  .VerticalListing {
+    width: 55%;
+  }
+
 }
 
 /*Mobile CSS*/
