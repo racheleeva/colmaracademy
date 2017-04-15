@@ -212,7 +212,25 @@ footer a {
   margin-left: .25rem;
 }
 
-/*Mobile*/
+/*Tablet CSS*/
+@media only screen and (max-width: 760px) {
+  .HeaderLogo, header .Desktop, .Desktop img {
+    display: none;
+  }
+
+  .Tablet {
+    display: block;
+  }
+
+  header .Mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/*Mobile CSS*/
 @media only screen and (max-width: 470px) {
   .HeaderLogo, .FirstSection img, .SecondSection .LeftColumn, .Desktop, .VerticalListing img, h4, .VerticalListing p, .Theses .RightColumn, .Theses h3, .Theses p, footer a {
     display: none;
