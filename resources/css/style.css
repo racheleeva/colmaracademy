@@ -249,9 +249,8 @@ footer a {
 }
 
 /* Mobile CSS */
-/*trying to figure this out!*/
 @media only screen and (max-width: 470px) {
-  .HeaderLogo, /*.FirstSection img,*/ .SecondSection .LeftColumn, .Desktop, .VerticalListing img, h4, .VerticalListing p, .Theses .RightColumn, .Theses h3, .Theses p, footer a {
+  .HeaderLogo, .SecondSection .LeftColumn, .Desktop, .VerticalListing img, h4, .VerticalListing p, .Theses .RightColumn, .Theses h3, .Theses p, footer a {
     display: none;
   }
 
@@ -272,42 +271,21 @@ footer a {
     /* Not totally sure why wrap-reverse helps center things here */
   }
 
-/* to override the 60% width at Desktop
-  .LeftColumn, .RightColumn {
-    width: 100%;
-  }
-*/
-
   .LeftColumn {
     width: 100%;
     padding: 0px;
   }
 
   .FirstSection .RightColumn {
-    /*width: 100%;*/
+    width: 92.5%;
     align-items: center;
     padding: 2rem 0rem 0rem 0rem;
     /* to center the Start Here button */
   }
 
-/* Trying to set the image as a normal image instead of BG image
-  .FirstSection .LeftColumn {
-    background-image: url("../images/banner.jpg");
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 180px;
-  }
-*/
-
   .FirstSection .RightColumn h1 {
     padding-bottom: 2rem
   }
-
-/*
-  .FirstSection .RightColumn h3 {
-    padding-bottom: 1.5rem;
-  }*/
 
   .button {
     margin-bottom: 1rem;
