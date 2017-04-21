@@ -249,6 +249,7 @@ footer a {
 }
 
 /* Mobile CSS */
+/*trying to figure this out!*/
 @media only screen and (max-width: 470px) {
   .HeaderLogo, /*.FirstSection img,*/ .SecondSection .LeftColumn, .Desktop, .VerticalListing img, h4, .VerticalListing p, .Theses .RightColumn, .Theses h3, .Theses p, footer a {
     display: none;
